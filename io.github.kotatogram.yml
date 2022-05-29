@@ -315,3 +315,5 @@ modules:
           tag-query: first | .tag_name
           timestamp-query: first | .published_at
           version-query: $tag | sub("^[kK]"; "")
+      - type: patch
+        path: kotatogram_0001_Add_an_option_to_hide_messages_from_blocked_users.patch
