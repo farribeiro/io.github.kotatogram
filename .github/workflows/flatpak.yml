@@ -12,8 +12,9 @@
         options: --privileged
       steps:
       - uses: actions/checkout@v2
-      - name: Checkout submodules
+      - name: Init submodules
         run: git submodule init
+      - name: Update submodules
         run: git submodule update
       - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
