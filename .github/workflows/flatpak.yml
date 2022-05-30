@@ -1,5 +1,3 @@
-- name: Flatpak Builder
-  uses: bilelmoussaoui/flatpak-github-actions@v2
   on:
     push:
       branches: [main]
@@ -17,5 +15,5 @@
       - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
           bundle: palette.flatpak
-          manifest-path: org.gnome.zbrown.Palette.yml
+          manifest-path: io.github.kotatogram.yml
           cache-key: flatpak-builder-${{ github.sha }}
